@@ -15,7 +15,7 @@ The tools are designed for quick educational estimates rather than professional 
 After enabling GitHub Pages:
 
 ```text
-https://YOUR-GITHUB-USERNAME.github.io/uk-solar-calculators
+https://ossmydev.github.io/uk-solar-calculators/
 ```
 
 ## Solar Payback Calculator
