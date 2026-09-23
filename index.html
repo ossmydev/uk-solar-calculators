@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UK Solar Calculators | Payback, Panel Count & Battery Size</title>
+  <meta name="description" content="Free lightweight UK solar calculators for payback period, solar panel count and battery size, created by Green Energy Today." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="UK Solar Calculators" />
+  <meta property="og:description" content="Free calculators for UK solar payback, panel count and battery sizing." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="https://newgreenenergytoday.blogspot.com/" target="_blank" rel="noopener">Green Energy Today</a>
+      <h1>UK Solar Calculators</h1>
+      <p class="intro">Three lightweight calculators for quick solar planning: payback period, panel count and battery size.</p>
+      <p class="header-note">For detailed guides, assumptions and advanced calculations, use the linked Green Energy Today resources below.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="calculator-card" id="payback-calculator">
+      <div class="section-label">CALCULATOR 1</div>
+      <h2>Solar Payback Calculator</h2>
+      <p>Estimate how long a solar panel system could take to recover its upfront cost.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="paybackCost">Solar system cost (£)</label>
+          <input id="paybackCost" type="number" min="0" step="100" value="7600" />
+        </div>
+        <div class="field">
+          <label for="paybackSavings">Annual electricity savings (£)</label>
+          <input id="paybackSavings" type="number" min="0" step="10" value="600" />
+        </div>
+        <div class="field">
+          <label for="paybackExport">Annual export income (£)</label>
+          <input id="paybackExport" type="number" min="0" step="10" value="150" />
+        </div>
+      </div>
+
+      <button class="calc-button" id="paybackBtn" type="button">Calculate Payback</button>
+
+      <div class="result-box" aria-live="polite">
+        <span>Estimated payback period</span>
+        <strong id="paybackResult">10.1 years</strong>
+      </div>
+
+      <p class="disclaimer">Simplified estimate only. Actual returns depend on generation, self-consumption, tariffs, system performance, maintenance and future energy prices.</p>
+
+      <a class="resource-link" href="https://newgreenenergytoday.blogspot.com/p/solar-calculator.html" target="_blank" rel="noopener">Open the full Solar Savings Calculator →</a>
+    </section>
+
+    <section class="calculator-card" id="panel-calculator">
+      <div class="section-label">CALCULATOR 2</div>
+      <h2>Solar Panel Number Calculator</h2>
+      <p>Estimate how many panels may be needed based on annual electricity use, panel wattage and expected annual solar yield.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="annualUse">Annual electricity use (kWh)</label>
+          <input id="annualUse" type="number" min="1" step="100" value="3500" />
+        </div>
+        <div class="field">
+          <label for="panelWattage">Panel wattage</label>
+          <select id="panelWattage">
+            <option value="400">400 W</option>
+            <option value="425" selected>425 W</option>
+            <option value="450">450 W</option>
+            <option value="500">500 W</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="solarYield">Annual solar yield (kWh per kWp)</label>
+          <input id="solarYield" type="number" min="100" step="50" value="900" />
+        </div>
+      </div>
+
+      <button class="calc-button" id="panelBtn" type="button">Estimate Panels</button>
+
+      <div class="result-box" aria-live="polite">
+        <span>Estimated system</span>
+        <strong id="panelResult">10 panels</strong>
+        <small id="panelSize">Approx. 4.25 kWp</small>
+      </div>
+
+      <p class="disclaimer">Actual system design also depends on roof space, shading, orientation, location, consumption patterns and installer design.</p>
+
+      <a class="resource-link" href="https://newgreenenergytoday.blogspot.com/2026/09/how-many-solar-panels-do-i-need-uk.html" target="_blank" rel="noopener">Read the full UK solar panel sizing guide →</a>
+    </section>
+
+    <section class="calculator-card" id="battery-calculator">
+      <div class="section-label">CALCULATOR 3</div>
+      <h2>Solar Battery Size Calculator</h2>
+      <p>Estimate a battery capacity based on daily electricity consumption, evening demand and usable battery capacity.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="dailyUse">Average electricity use per day (kWh)</label>
+          <input id="dailyUse" type="number" min="0.5" step="0.5" value="10" />
+        </div>
+        <div class="field">
+          <label for="nightShare">Share used after solar generation drops</label>
+          <select id="nightShare">
+            <option value="0.40">Around 40%</option>
+            <option value="0.50" selected>Around 50%</option>
+            <option value="0.60">Around 60%</option>
+            <option value="0.70">Around 70%</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="usableCapacity">Usable battery capacity</label>
+          <select id="usableCapacity">
+            <option value="0.80">80% usable</option>
+            <option value="0.90" selected>90% usable</option>
+            <option value="0.95">95% usable</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="calc-button" id="batteryBtn" type="button">Estimate Battery Size</button>
+
+      <div class="result-box" aria-live="polite">
+        <span>Estimated battery size</span>
+        <strong id="batteryResult">5.5 kWh</strong>
+        <small id="batteryRange">Suggested range: 4.5–6.5 kWh</small>
+      </div>
+
+      <p class="disclaimer">Planning estimate only. Battery sizing also depends on solar generation, tariff structure, discharge power, seasonal usage and installer design.</p>
+
+      <a class="resource-link" href="https://newgreenenergytoday.blogspot.com/2026/09/what-size-solar-battery-do-i-need-uk.html" target="_blank" rel="noopener">Read the full UK solar battery sizing guide →</a>
+    </section>
+
+    <section class="about-box">
+      <h2>About these tools</h2>
+      <p>These lightweight calculators are maintained by <a href="https://newgreenenergytoday.blogspot.com/" target="_blank" rel="noopener">Green Energy Today</a>, an independent site covering solar panels, battery storage, solar savings and renewable energy for homeowners.</p>
+      <p>For a more detailed ROI estimate including solar production, electricity prices, installation cost and long-term savings, use the <a href="https://newgreenenergytoday.blogspot.com/p/solar-calculator.html" target="_blank" rel="noopener">full Solar Savings Calculator</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Educational tools only — not financial, installation or engineering advice.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
