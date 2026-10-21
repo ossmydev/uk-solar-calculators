@@ -30,20 +30,20 @@ https://newgreenenergytoday.blogspot.com/p/solar-calculator.html
 Estimate how many solar panels may be required from annual electricity consumption, panel wattage and expected solar yield.
 
 **Detailed guide:**  
-https://newgreenenergytoday.blogspot.com/2026/09/how-many-solar-panels-do-i-need-uk.html
+https://newgreenenergytoday.com/2026/09/how-many-solar-panels-do-i-need-uk.html
 
 ## Solar Battery Size Calculator
 
 Estimate a possible battery capacity based on daily consumption, evening use and usable battery capacity.
 
 **Detailed guide:**  
-https://newgreenenergytoday.blogspot.com/2026/09/what-size-solar-battery-do-i-need-uk.html
+https://newgreenenergytoday.com/2026/09/what-size-solar-battery-do-i-need-uk.html
 
 ## About Green Energy Today
 
 These calculators are maintained by **Green Energy Today**, an independent site covering solar panels, battery storage, solar savings, incentives and renewable energy.
 
-https://newgreenenergytoday.blogspot.com/
+https://newgreenenergytoday.com/
 
 ## Project structure
 
